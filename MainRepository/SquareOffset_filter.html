@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+      <meta charset="utf-8" />
+      <title>SVG Offset</title>
+</head>
+</style>
+
+<body> <svg>
+            <defs>
+                  <filter id="i1" x="0" y="0">
+                        <feGaussianBlur stdDeviation="5" />
+                        <feOffset dx="5" dy="5" />
+                  </filter>
+            </defs>
+            <rect width="150" height="150" fill="grey" filter="url(#i1)" />
+            <rect width="150" height="150" fill="springgreen" />
+      </svg>
+</body>
+
+</html>
